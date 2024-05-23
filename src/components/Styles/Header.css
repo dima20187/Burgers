@@ -1,0 +1,368 @@
+
+.container{  
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+position: sticky;
+top: 0px;
+z-index: 1;
+
+
+}
+
+.item{
+  display: flex;
+  width: 100%;
+  height: 110px;
+  justify-content: center;
+ align-items: center;
+  top: 0;
+  background-color: rgb(245, 235, 220);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.115);;
+
+  
+}
+.item_container{
+    display: flex;
+    width: 68%;
+    justify-content: center;
+}
+
+.item_ul{
+    
+    display: flex;
+    width: 100%;
+
+    justify-content: start;
+    align-items: center;
+  
+}
+
+.menu{
+    cursor: pointer;
+    width: 23px;
+    height: 30px;
+    transition-duration: 1s, 1s;
+}
+.menu:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.href{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5%;
+}
+.href img{
+    margin-left: 5px;
+    width: 14px;
+    height: 14px;
+}
+.number{
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10%;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.number span{
+    font-weight:100;
+    line-height: 20px;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    margin-right: 5%;
+}
+
+
+
+
+.image_icon{
+   
+    cursor: pointer;
+   display: flex;
+   justify-content: center;
+   
+}
+.image_icon img{
+    width: 94px;
+    height: 108px;
+    transition-duration: 1s, 2s;
+}
+.image_icon img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.item_2{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.href_2 a{  
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(129, 67, 46);
+}
+.Exit_buy{
+    display: flex;
+    font-size: 18px;
+}
+
+.Exit{
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding-right: 5px;
+    
+}
+.href_2 a{
+    color: black;
+    
+}
+.href_2 a:hover{
+    color: rgb(187, 0, 0);
+}
+.Exit_2{
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 4%;
+}
+
+.href_2{
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 4%;
+    
+}
+.user{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: -35px;
+    width: 30px;
+    height: auto;
+    
+    
+    
+}
+.nonUser{
+    display: none;
+   
+}
+.Profil h1{
+font-size: 18px;
+padding-bottom: 5px;
+width: 100%;
+border-bottom: 1px solid black;
+}
+.ProfilNumber{
+    font-size: 17px;
+    white-space: wrap;
+
+}
+.ProfilExit{
+    width: 70px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid none  ;
+    background-color: rgb(201, 9, 9);
+    color: wheat;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.ProfilExit:hover{
+    background-color:  rgb(143, 10, 10);
+    color: wheat;
+}
+.user img{
+    cursor: pointer;
+    width: 28px;
+    height: auto;
+
+}
+.user img:hover{
+    border-bottom: 1px solid black;
+   
+}
+.no{
+    display: none;
+    position: absolute;
+    align-items: center;
+    width: 150px;
+    height: auto;
+    background-color: rgb(245, 235, 220);
+    border: 1px solid rgb(97, 41, 41);
+    border-radius: 15px;
+    
+    margin-top: 30px;
+     
+
+}
+
+.user:hover .no{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.user:focus .no{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.number_2{
+    font-size: 16px;
+    font-weight: 900;
+    margin-right: 2%;
+}
+.number_2 span{
+    font-size: 14px;
+}
+.Exit_2:hover{
+    color: rgb(187, 0, 0);
+}
+.href_2:hover{
+color: rgb(187, 0, 0);
+}
+
+.buy{
+    text-decoration: none;
+    width: 30px;
+    padding: 4px 2px 2px 16px;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid none;
+    background-color: rgb(206, 196, 182);
+    transition-duration: 1s, 2s;
+}
+.buy a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.buy img{
+    
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+.buy:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.korzina_count{
+    float:right;
+    position: relative;
+    white-space: nowrap;
+   bottom: 10px;
+   
+}
+
+
+@media (max-width:1200px) {
+   
+    .user{
+        
+        margin-right: 50px;
+    }
+    .item_container{
+    width: 100%;
+    margin: 0px 20px;
+    }
+    
+    .item_ul{
+        width: 50px;
+        justify-content: left ;
+    }
+    .number{
+        display: none;
+    }
+    .href{
+        display: none;
+    }
+    .href_2 {
+        display: none;
+    }
+    .Exit_2{
+        
+        display: flex;
+        justify-content:right;
+        
+    }
+   .buy{
+    display: none;
+   }
+    .image_icon{
+        width: 100%;
+        align-items: center;
+        justify-content:right;
+
+    }
+    .image_icon img{
+        width: 50px;
+        height:55px
+    }
+
+    .number span{
+        flex-wrap: wrap;
+    }
+    
+
+
+}
+@media (max-width:710px) {
+    .Profil{
+        display: none;
+    }
+    .no{
+        width: auto;
+    }
+    .user{
+        
+        margin-right: 10px;
+    }
+    
+    .item_ul{
+        width: 50px;
+ 
+    
+    }
+    .number{
+        
+        display: none;
+    }
+    .image_icon{
+
+        justify-content:right;
+
+    }
+
+    .image_icon img{
+       width: 40px ;
+       height: 45px ;
+    }
+}

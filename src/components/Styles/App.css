@@ -1,0 +1,72 @@
+
+
+ .App{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  
+  
+    
+
+ }
+  .appa{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  
+ }  
+   .header{
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  z-index: 2;
+  position: sticky;
+  top: -1px;
+  
+  
+ } 
+  
+
+ .navigate{
+   height: 100%;
+ }
+  
+ 
+ .content{
+  
+   height: 100%;
+    width: 100%;
+
+  
+ }  
+
+.footerr{
+
+  position: static;
+  bottom: 0px;
+  width: 100%;
+ 
+
+} 
+
+ 
+ 
+ ::-webkit-scrollbar{
+  width: 10px;
+  
+ }
+ ::-webkit-scrollbar-track{
+  background-color: rgba(205, 192, 172, 0.848);
+ }
+ ::-webkit-scrollbar-thumb{
+  background:  rgba(119, 111, 98, 0.848);
+  border-radius: 8px;
+  border: 2px solid #d4d4d4;
+ }
+
+ 

@@ -1,0 +1,46 @@
+.water_container{
+    display: flex;
+    justify-content:center;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.water{
+    display: block;
+    text-align:center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+   
+}
+
+
+ul img{
+    flex-wrap: wrap;
+    width: 15vw;
+    height: auto;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.name{
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: wrap;
+    color: #dd7639;
+   
+}
+
+.price{
+    padding-top: 2%;
+    font-size: 20px;
+    color:  #673f35;
+    font-weight: bold;
+    text-transform: uppercase;
+}

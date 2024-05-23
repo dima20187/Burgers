@@ -1,0 +1,38 @@
+.Manu_container{
+    width: 100vw;
+    height: auto;
+}
+.Manu{
+width: 100vw;
+height: auto;
+margin-top: 8%;
+
+
+}
+.Manu ul{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+   
+}
+.Manu li{
+    font-size: 1.1vw;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    flex-wrap: wrap;
+
+}
+.Manu li:hover{
+    color: #ce3a31;
+}
+.Manu_active{
+    color: #ce3a31;
+}
+.Manu_unactive{
+   
+    color: #673f35;
+}

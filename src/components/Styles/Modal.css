@@ -1,0 +1,160 @@
+.modal{
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transform: scale(0);
+    
+   
+}
+
+.modal.ModalActive{
+    transform: scale(1);
+    transition: 0s;   
+
+}
+
+.modal__content{
+
+    margin-bottom: 10%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #f2ebe3;
+   
+    
+}
+.modal_paga{
+width: 100%;
+height: 100%;
+}
+.modalExit{
+    margin-bottom: 5px;
+    display:flex;
+    justify-content: center;
+    color: #673f35;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+}
+.input{
+    width: 50%;
+    height: 34px;
+    border-radius: 0px 15px 15px 0px;
+    padding:2px 15px;
+    background-color: #f8fafc;
+    border: 1px solid #d6dadc;
+    font-size: 18px;
+    line-height: normal;
+    outline: 0;
+   
+}
+.divi{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+
+}
+.divi span{
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: center;
+    color: red;
+}
+.tet{
+    display: flex;
+    justify-content: center;
+   
+}
+.phoneCod{
+    
+    font-size: 20px;
+    border-radius: 15px 0px 0px 15px;
+    text-align: center;
+    background-color: #f8fafc;
+    border: 1px solid #d6dadc;
+    border-right: none;
+    padding: 6.5px 10px;
+    
+}
+.codButton{
+    font-size: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #d6dadc;
+    
+    color: #ce3a31;
+    width: 110px;
+    font-weight: bold;
+   
+}
+.Phone{
+    font-size: 20px;
+    text-align: center;
+}
+.inputCheck{
+    outline: 0;
+    width: 50%;
+    height: 34px;
+    padding: 0 10px;
+    background-color: #f8fafc;
+    border: 1px solid #d6dadc;
+    font-size: 16px;
+    line-height: normal;
+}
+.codButtonCheck{
+    font-size: 10px;
+    text-decoration: underline;
+}
+.Text{
+    width: 465px;
+    font-size: 16px;
+}
+.config{
+    display: flex;
+    justify-content: center;
+}
+.configButton{
+    margin-top: 5%;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #673f35;
+    height:60px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #673f35;
+    
+}
+.configButton:hover{
+    cursor: pointer;
+    color: #ce3a31;
+    border: 1px solid #f2ebe3;
+}
+.Exittt{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.Modale_Exit{
+ 
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+@media (max-width:555px) {
+    .input{
+        display: block;
+        width: 100px;
+    }
+    
+    
+}

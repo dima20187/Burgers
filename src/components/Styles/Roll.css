@@ -1,0 +1,36 @@
+.container_roll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;  
+
+}
+
+
+.shavuha{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content:center;
+    
+    padding: 2%;
+    gap:5%;  ;  
+}
+.shavuha li{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    
+}
+.shavuha img{
+    padding: 1%;
+    cursor: pointer;
+    width: 30vh;
+    height: auto;
+}
+
+
+

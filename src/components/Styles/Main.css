@@ -1,0 +1,147 @@
+main {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+     
+    
+     
+    
+    }
+    .main__items {
+       display: flex;
+      font-weight: bold;
+      background-color: rgb(245, 235, 220);
+      height: 50px;
+      align-items: center;
+      text-align: center;
+      margin-top: 40px;
+      top: 105px;
+      position: sticky;
+      width: 100%;
+      justify-content: center;
+      /* font-size: 15px; */
+      z-index: 1;
+      box-shadow: 0 1px 0px rgba(0, 0, 0, 0.115);
+      
+      
+    }
+    .active{
+      width: 200px;
+      font-size: 18px;
+    
+      
+      line-height: 12px;
+      color: rgba(  193,0,32);
+      
+    }
+    
+  
+    
+    .main_p:hover a{
+     
+      color: rgba( 248,0,0);
+      
+    }
+  
+  
+    .container_p{
+      width: 100%;
+      height: auto;
+     align-items: center;
+    }
+    .main_page{
+      width: 100%;
+      align-items: center;
+    }
+   
+    h2{
+      font-size: 40px;
+      line-height: 120%;
+      margin:  2% 20%;
+      color: rgb(97, 41, 41); 
+  
+     
+    }
+   
+   .main_p a{
+    cursor: pointer;
+    padding: 40px;
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+    line-height: 10px;
+    white-space: nowrap;
+    color: rgb(97, 41, 41); ;
+   }
+  
+    
+  
+     .main_p > .active{
+    cursor: pointer;
+    padding: 40px;
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+    line-height: 10px;
+    white-space: nowrap;
+    color: rgba( 248,0,0)
+      
+      
+    } 
+    .Cate{
+  
+     justify-content: center;
+      height: auto;
+    } 
+   
+ 
+       @media (max-width:1200px) {
+       
+        .main__items{
+          margin-top: 60px;
+          width: 100%;
+          font-size: 13px;
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 10px;
+          
+          padding-top: 20px;
+          height: auto;
+          padding-bottom: 10px;
+        
+      } 
+        
+       
+
+      
+    }
+    @media (max-width: 730px) { 
+   
+     .main__items  {
+      justify-content: left;
+      width: 100%;
+      display: flex;
+     flex-wrap: nowrap;
+      margin-top: 0px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      
+    } 
+    ::-webkit-scrollbar{
+      display: none;
+      
+     }
+     
+   
+      h2{
+        font-size: 35px;
+      }
+    } 
+     @media (max-width:300px) {
+      
+      h2{
+        font-size: 25px;
+      }
+    } 

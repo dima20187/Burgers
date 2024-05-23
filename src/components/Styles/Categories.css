@@ -1,0 +1,243 @@
+
+
+
+.burger_container{
+   z-index: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: wrap;
+    cursor:default;
+    margin-bottom: 150px;
+
+}
+.burger_item{
+    width: 100%;
+    height:100%;
+}
+.burger{
+
+    display: flex;
+    text-align: center;
+   justify-content: center;
+    flex-wrap:nowrap;
+    width: 100%;
+    height: 100%;
+   
+}
+  img{
+
+    width: 300px;
+    height: auto;
+    transition: 0.5s;
+
+} 
+.burger_page{
+    
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 50px 70px;
+   
+}
+
+
+
+
+ .burger_page a{  
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(129, 67, 46);
+    
+}
+.burger_buy{
+    height: 15px;
+    width: 93%;
+    font-size: 100%;
+    display: flex;
+    white-space: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+}
+.info{
+    display:block;
+    width: 100%;
+    height:auto;
+;
+
+    
+  
+}
+.burger_name{
+    width: 100%;
+    height: 10%;
+    white-space: wrap;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 25px; 
+    text-align:start;
+    color: rgb(80, 35, 20);
+
+}
+.burger_info{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 90%;
+    height: 90px;
+    text-align: justify;
+    color: rgb(129, 67, 46);
+    text-decoration: none;
+
+}
+ .burger_price{
+    display: flex;
+    width: 180px;
+    justify-content: left;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+
+} 
+.burger_buy button{
+    transition: 0.5s;
+    font-size: 19px;
+    border: 1px;
+    background-color: rgb(201, 9, 9);
+    color: wheat;
+    border-radius: 50px;
+    padding: 8px 35px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.burger_buy button:hover{
+
+    background-color: rgb(143, 10, 10);
+}
+.burger img:hover{
+
+transform: translateY(3px);
+
+}
+.rt{
+    display: none;
+}
+
+
+@media (max-width:1490px) {
+    .burger_page{
+        grid-template-columns: repeat(3,1fr);
+    }
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
+@media (max-width:1110px) {
+    .burger_page{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+}
+@media (max-width:730px) {
+    .burger_container{
+        margin-bottom: 50px;
+    }
+    .rt{
+        display: block;
+        position: sticky;
+    }
+    .burger_page:last-of-type{
+        margin-bottom: 50px;
+    }
+    
+    .burger_page{
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        
+    }
+    .burger_item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.199);
+
+    }
+    img{
+        width: 200px;
+        height: auto;
+    }
+    .burger_info{
+      
+    width: 95%;
+    height: auto;
+    margin-bottom: 20px;
+    height: auto;
+        
+    }
+    .burger_buy{
+        display: flex;
+        width: 95%;
+
+    }
+   
+    .burger_price{
+        min-width: 30px;
+        white-space: wrap !important;
+        line-height: 15px;
+        margin-right: 5px;
+        width: 80%;
+        justify-content: left;
+    }
+    .burger_buy button{
+        font-size: 13px;
+        width: auto;
+        
+        height: auto;
+        text-align: center;
+        justify-content: left;
+    }
+}
+
+@media (max-width:440px) {
+   
+    img{
+        width: 120px;
+        height: auto;
+    }
+    .burger_info{
+        font-size: 15px;
+    }
+    .burger_price{
+        font-size: 15px;
+    }
+    .burger_buy button{
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    .burger_name{
+        font-size: 23px;
+        white-space: wrap;
+        
+        
+    }
+}
+
+
+
