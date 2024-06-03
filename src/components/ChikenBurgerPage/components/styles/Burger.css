@@ -1,0 +1,310 @@
+.angus_container{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    color: #673f35; 
+   
+}
+.angus_page{
+    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+    width: 80%;
+    
+    
+}
+.angus_image{
+    width: 450px;
+    height: auto;
+}
+.angus{
+   display: flex;
+   flex-direction: column; 
+   width: 40%;
+   margin-right: 50px;
+   
+   
+   
+   
+}
+.angus_name{
+    width: 100%;
+    line-height: 35px;
+    height: 50px;
+    white-space: wrap;
+    text-align: left;
+    margin-right: 20px;
+    
+}
+.angus_price{
+    width: 100%;
+    white-space: nowrap;
+    text-align: right;
+    
+}
+.sostav_p{
+    font-size: 18px;
+    
+}
+.ves{
+    font-size: 23px;
+    color:#673f35;
+    font-weight: bold;
+    line-height: 5px;
+}
+.over{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    
+
+}
+
+.sostav{
+    display: flex;
+   
+    
+    
+}
+
+.bgu{
+    border: 1px solid rgba(100, 63, 21, 0.233);
+    flex-wrap: nowrap;
+    margin: 10px;
+    margin-left: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.bgu p{
+   
+    white-space: nowrap;
+    width: 40px;
+    height: 8px;
+    padding: 0px 10px;
+    line-height: 10px;
+    font-size: 18px;
+    
+}
+.sostav_name{
+    display: flex;
+    justify-content: center;
+    color: #471f1594;
+    font-weight: bold;
+}
+.sostav_gram{
+    color:#673f35;
+    font-weight: bold;
+    
+}
+.angus_infa{
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+}
+.angus_information{
+    
+    width: 100%;
+}
+.angus_information h1{
+    justify-content: left;
+}
+.rr{
+    white-space: wrap;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(119, 60, 5, 0.384);
+    line-height: 25px;
+}
+
+.angus_details_infa{
+    font-size: 22px;
+    color: #673f35;
+    font-weight: bold;
+    margin-top: 45px;
+}
+.angus_ditails_opis{
+    width: 80%;
+    font-size: 20px;
+}
+.opis{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 75%;
+    margin-top: 0;
+    text-align:left;
+    
+}
+.opis p{
+    height: auto;
+  
+
+
+
+}
+.opis_name{
+    font-size: 20px;
+    line-height: normal;
+
+}
+.opis_p{
+    margin-top: -10px;
+    line-height: normal;
+    font-size: 18px;
+}
+.button_price button{
+    transition: 0.5s;
+    font-size: 16px;
+    border: 1px;
+    background-color: rgb(201, 9, 9);
+    color: wheat;
+    border-radius: 50px;
+    padding: 16px 45px;
+    font-weight: bold;
+   cursor: pointer;
+    margin-top: 20px;
+}
+.button_price button:hover{
+
+    background-color: rgb(143, 10, 10);
+}
+@media (max-width:1200px) {
+    .angus_image{
+        width: 350px;
+        height: auto;
+    }
+}
+@media (max-width: 950px) {
+    .angus_page{
+      flex-direction: column-reverse;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .angus{
+        width: 100%;
+        align-items: center;
+    }
+    .angus_infa{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0px;
+        
+    }
+  
+   .rr{
+    width: 100%;
+    justify-content: center;
+   }
+   .angus_price{
+    width: auto;
+    display: flex;
+    position: fixed;
+    border: 1px solid transparent;
+    background-color: rgb(201, 9, 9);
+    color: wheat;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 23px;
+    bottom:-6px;
+    left: 0px;
+    z-index: 3;
+
+   }
+   .angus_name{
+    margin-right: 0px;
+    text-align: center;
+   }
+   .angus_infa{
+    width: 100%;
+    justify-content: center;
+   }
+   .angus_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:justify;
+   }
+   .opis{
+    text-align: justify;
+   }
+   .button_price{
+    display: flex;
+    height: auto;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    justify-content: right;
+    z-index: 2;
+    position: fixed;
+    
+    
+   }
+   .button_price button{
+    position: relative;
+    bottom: 10px;
+   }
+  
+  .over{
+   align-items: center;
+  }
+}
+@media (max-width:350px) {
+    .angus_name{
+        font-size: 30px
+    }
+    .angus_image{
+        width: 250px;
+        height: auto;
+    }
+    .over{
+        width: 100%;
+     
+    }
+    .sostav{
+        width: 100%;
+        justify-content: center;
+    }
+    .bgu{
+        margin: 3px;
+    }
+   
+   .bgu p {
+   
+    width: 30px;
+    height: 4px;
+    font-size: 16px;
+    padding: 0px 10px;
+   }
+   .angus_price{
+    padding: 10px;
+    font-size: 20px;
+   }
+   .button_price button{
+    right: 3px;
+    bottom: 7px;
+    padding: 15px 20px;
+   }
+}
+@media (max-width:250px) {
+    .angus_image{
+        width: 150px;
+    }
+    .angus_name{
+        white-space: wrap;
+    }
+    .sostav{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: auto;
+        row-gap: 5px;
+        column-gap: 5px;
+
+    }
+    .bgu {
+        text-align: center;
+    }
+}
