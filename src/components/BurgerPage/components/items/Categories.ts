@@ -1,5 +1,5 @@
 
-import { CATEGORIES } from "../../../Assets/BurgerImage/image/Categories"
+import { CATEGORIES } from "../../../../Assets/BurgerImage/image/Categories"
 
 
 const {ANGUS,ANGUSXL,BIGKING,

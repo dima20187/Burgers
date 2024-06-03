@@ -1,4 +1,4 @@
-import { CHIKEN } from "../../../Assets/ChikenBurgerImage/imageChiken/Chiken"
+import { CHIKEN } from "../../../../Assets/ChikenBurgerImage/imageChiken/Chiken"
 
 const { SHRIPKING, TILZITERKING,CHIKENBURGER,
     CHIKENTARTAR,CEZARKING,FISHBURGER}=CHIKEN
@@ -6,6 +6,7 @@ const { SHRIPKING, TILZITERKING,CHIKENBURGER,
 export const Chiken = [{
 
     href:'/TilziterChiken',
+    id: new Date().toISOString(),
     name:  'Тильзитер кинг с курицей',
     image:  TILZITERKING ,
     price: 11.40,
@@ -14,6 +15,7 @@ export const Chiken = [{
   
 } ,  {
     href: '/ChikenTarTar',
+    id: new Date().toISOString(),
     name: 'Чикен тар-тар',
     image: CHIKENTARTAR,
     price: 7.70,
@@ -21,6 +23,7 @@ export const Chiken = [{
     quantity: 1
 }  , {
     href: '/ShrimpKing',
+    id: new Date().toISOString(),
     name: 'Шримп кинг',
     image: SHRIPKING,    
     price: 10.40,
@@ -28,6 +31,7 @@ export const Chiken = [{
     quantity: 1
 }  , {
     href: '/ChikenBurger',
+    id: new Date().toISOString(),
     name: 'Чикен кинг',
     image: CHIKENBURGER,
     price: 7.60,
@@ -35,6 +39,7 @@ export const Chiken = [{
     quantity: 1
 }  , {
     href: '/CezarKing',
+    id: new Date().toISOString(),
     name: 'Цезарь кинг',
     image: CEZARKING,
     about:'Любители курочки оценят новинку Цезарь Кинг! Сочные хрустящие куриные наггетсы, свежий томат и листовой салат заправляются...',
@@ -42,6 +47,7 @@ export const Chiken = [{
     quantity: 1
 } ,  {
     href: '/FishBurger',
+    id: new Date().toISOString(),
     name: 'Фиш бургер',
     image: FISHBURGER,
     price: 9.30,

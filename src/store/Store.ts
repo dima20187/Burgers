@@ -1,7 +1,6 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-
 import counterReducer from './slice/CouterSlice'
 
 
@@ -29,3 +28,4 @@ const persistConfig = {
 })
 export const persister = persistStore(store);
 export default store;
+export type RootState = ReturnType<typeof store.getState>;
