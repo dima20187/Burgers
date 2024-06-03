@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link} from 'react-scroll'
 import '../../styles/Main.css'
 import { Categories } from '../BurgerPage/Categories'
-import { Roll } from '../RollsPage/Roll'
+import { Roll } from '../Rolls/Roll'
 import { ChikenBurger } from '../ChikenBurgerPage/ChikenBurger'
 
 

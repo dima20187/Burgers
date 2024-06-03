@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { increment} from '../../store/slice/CouterSlice'
-import { Shavuha } from '../Rolls/Items/RollItems'
+import { Shavuha } from './Items/RollItems'
 import '../../styles/Water.css'
 import { Link } from 'react-router-dom'
 
