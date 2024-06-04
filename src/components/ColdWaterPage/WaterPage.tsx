@@ -1,13 +1,13 @@
 import React from 'react'
 import { Water } from './Items/ColdWater'
-import '../../styles/Water.css'
+import './styles/WaterStyles.css'
 import { ColdWaterItems } from './components/ColdWaterItems'
 
 const ColdWater = () => {
   return (
-    <div className='burger_container' >
-      <div className='burger' >
-        <div className='burger_page' >
+    <div className='water_container' >
+      <div className='water' >
+        <div className='water_page' >
       {Water.map(item=>(
         <ColdWaterItems item={item} key={item.id} />
       ))}
