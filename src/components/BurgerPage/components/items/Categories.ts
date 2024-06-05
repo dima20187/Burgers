@@ -14,7 +14,7 @@ export const Items  = [
     href: '/Angus',
     id: new Date().toISOString(),
     name: 'Ангус Шеф',
-    image: ANGUS ,
+    image: ANGUS,
     price: 14.99,
     about:'Премиальная новинка со 100% говядиной Абердин Ангус! Невероятно нежный 150-граммовый мраморный бифштекс на',     
     quantity: 1
