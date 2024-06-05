@@ -7,3 +7,8 @@ export interface IItems {
     quantity: number;
     price: number;
 };
+
+export interface IUser {
+    id: number;
+    number: number;
+};

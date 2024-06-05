@@ -9,7 +9,7 @@ import { ColdWater } from '../ColdWaterPage/WaterPage'
 
 const Main = () => {
 
-  const [active,setActive]=useState(true)
+  const [active,setActive]=useState<boolean>(true)
  
 
   return (

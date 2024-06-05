@@ -1,15 +1,23 @@
+import { IItems, IUser } from "@/types/Items";
 import { createSlice } from "@reduxjs/toolkit";
+
+interface IInitialState{
+    burger: IItems[] | [];
+    user: IUser[] | [];
+}
+
+const initialState: IInitialState = {
+    burger: [],
+    user: [] ,
+};
 
 export const couterSlice = createSlice({
     name: 'burger',
-    initialState: {
-        burger: [],
-        user: []
-    },
+    initialState,
     reducers:{
-        incrementNumber:(state,{payload})=>{
+        incrementNumber:(state ,{payload})=>{
             state.user.push({
-                id: 2,
+                id: new Date().toISOString(),
                 number: Number('+'+ 375 +  payload)
             })
             
@@ -30,7 +38,7 @@ export const couterSlice = createSlice({
                return
             }else{
                 state.burger.push({
-                    id: new Date().toISOString(),
+                    id: new Date().toISOString() ,
                     image: payload.image,
                     name: payload.name,
                     price:payload.price,

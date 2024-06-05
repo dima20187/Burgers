@@ -3,33 +3,22 @@ import { useDispatch, useSelector } from 'react-redux'
 import { IMAGE } from '../../Assets/icons'
 import '../../styles/Korzina.css'
 import { plusQuantity,minusQuantity,decrement } from '../../store/slice/CouterSlice'
-
-
+import { RootState } from '@/store'
 
 
 const {KORZINA} =IMAGE
 
 const Korzina = () => {
-
-
-    const  By =(arr) =>arr.reduce((previousValue, currentValue)=>  previousValue + currentValue,0)
-
-    const stre = useSelector(state=>state.b.burger)
-    const user = useSelector(state=>state.user.user)
+    
+    const  By = (arr: number[]) =>arr.reduce((previousValue, currentValue)=>  previousValue + currentValue,0)
+    const stre = useSelector((state: RootState)=>state.b.burger)
+    const user = useSelector((state: RootState)=>state.user.user)
     console.log(user.length)
     const dispatch =useDispatch()
-
-    // const userPrifile=()=>{
-    //     if(user.length === 0){
-    //         alert('Пожалуйста пройдите авторизацию')    
-    //         }else{
-    //             alert('Заказ принят')
-    //         }
-    //         }
-    
+        
     return (
-<div className='korzinaPage' >
-    <div className='korzina' >
+    <div className='korzinaPage' >
+     <div className='korzina' >
         {!stre.length ?(
         <div className='korzina_none' >
             <h1>Корзина пуста...</h1>

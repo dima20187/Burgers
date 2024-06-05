@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { Dispatch, FC, SetStateAction } from 'react'
 import {  Link } from 'react-router-dom'
 import '../../styles/MenuSmoll.css'
 import { IMAGE } from '../../Assets/icons'
 import { useSelector } from 'react-redux'
+import { RootState } from '@/store'
 
 const {BURGER}=IMAGE
 
-const MenuSmoll = ({active,setActive,menu, setMenu,setModal,modal  }) => {
+type ISmollModal={
+  active: boolean;
+  setActive: Dispatch<SetStateAction<boolean>>
+  setModal: Dispatch<SetStateAction<boolean>>
 
-  const num = useSelector(state=>state.user.user)
-  const stre = useSelector(state=>state.b.burger)
+}
+
+const MenuSmoll = ({active,setActive,setModal}:ISmollModal) => {
+
+  const num = useSelector((state:RootState)=>state.user.user)
+  const stre = useSelector((state:RootState)=>state.b.burger)
   return (
     <div className={active ? 'modalSmoll ActiveSmoll' : 'modalSmoll'} onClick={()=>setActive(false)} >
        <div className='ModalSmollContent' onClick={e=>e.stopPropagation()} >
@@ -30,7 +38,7 @@ const MenuSmoll = ({active,setActive,menu, setMenu,setModal,modal  }) => {
             Профиль
             </li></div>
           :
-            <li  onClick={()=>setModal(true)}><Link>Вход и Регистрация</Link></li>
+            <li  onClick={()=>setModal(true)}><Link to=''>Вход и Регистрация</Link></li>
           }
           </ul> 
              </div>
