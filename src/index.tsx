@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import store, {persister } from './store/Store'
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
 <Provider store={store} >
     <BrowserRouter>

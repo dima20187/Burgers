@@ -14,8 +14,6 @@ export const ColdWaterItems:FC<IWater> = ({item}) => {
   
   const dispatch = useDispatch()
   
- 
-
   return (
     <div className='water_item' key={item.id}>
     <Link to={item.href} ><img className='water_img' src={item.image} alt='' /></Link>
