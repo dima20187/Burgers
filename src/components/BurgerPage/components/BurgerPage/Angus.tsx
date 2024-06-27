@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {ANGUS}=CATEGORIES
 
@@ -60,11 +61,15 @@ const Angus = () => {
                         <p className='angus_ditails_opis' >Наслаждайся каждым сырным укусом! Нежный мраморный бифштекс Абердин Ангус, пикантный Пармезан и щедрая порция соуса Пармеджано! А ещё внутри салат Романо, маринованный красный лучок и свежие томаты на мягкой булочке бриошь.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Ангус Шеф',image:ANGUS,price:14.99,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                        <Button onClick={()=>{
+                            dispatch(increment({
+                            name:'Ангус Шеф',
+                            image:ANGUS,
+                            price:14.99,
+                            quantity:1}))
+                            }}>
+                            В корзину
+                        </Button>
                 </div>
             </div>
             

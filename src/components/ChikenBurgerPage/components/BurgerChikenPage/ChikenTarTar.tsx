@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CHIKEN } from '../../../../Assets/ChikenBurgerImage/imageChiken/Chiken'
 import '../styles/Burger.css'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 
 const {CHIKENTARTAR}=CHIKEN
 
@@ -61,11 +62,7 @@ const ChikenTarTar= () => {
                         <p className='angus_ditails_opis' >Мы приготовили что-то особенное! Новый соус Тартар подчеркивает вкус сочной курочки с сыром Пармезан! А ещё внутри свежие томаты, салат Айсберг, рубленый лучок — на картофельной булочке с кунжутом.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Чикен Тар-Тар',image:CHIKENTARTAR,price:7.70,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Чикен Тар-Тар',image:CHIKENTARTAR,price:7.70,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

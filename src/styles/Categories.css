@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 50px 70px;
+    gap: 40px 60px;
    
 }
 
@@ -54,7 +54,7 @@
 }
 .burger_buy{
     height: 15px;
-    width: 93%;
+    width: 90%;
     font-size: 100%;
     display: flex;
     white-space: wrap;
@@ -69,7 +69,7 @@
 }
 .burger_name{
     width: 100%;
-    height: 10%;
+    height: 23px;
     white-space: wrap;
     flex-wrap: wrap;
     font-size: 30px;
@@ -80,11 +80,15 @@
 
 }
 .burger_info{
-    display: flex;
-    justify-content: center;
+     display: -webkit-box;
+    justify-content: center; 
     font-size: 18px;
-    width: 90%;
-    height: 80px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: auto;
     text-align: justify;
     color: rgb(129, 67, 46);
     text-decoration: none;    

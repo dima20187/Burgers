@@ -28,11 +28,11 @@ import { ChikenBurger } from '../components/ChikenBurgerPage/components/BurgerCh
 import { FishBurger } from '../components/ChikenBurgerPage/components/BurgerChikenPage/FishBurger';
 import { CezarKing } from '../components/ChikenBurgerPage/components/BurgerChikenPage/CezarBurger';
 
-import { ShrimpRoll } from '../components/Rolls/RollsPage/ShrimpRoll';
-import { TilziterRoll } from '../components/Rolls/RollsPage/TilziterRoll';
-import { CezarRoll } from '../components/Rolls/RollsPage/CezarRoll';
-import { VopperRoll } from '../components/Rolls/RollsPage/VopperRoll'
-import { FishRoll } from '../components/Rolls/RollsPage/FishRoll';
+import { ShrimpRoll } from '../components/Rolls/components/RollsPage/ShrimpRoll';
+import { TilziterRoll } from '../components/Rolls/components/RollsPage/TilziterRoll';
+import { CezarRoll } from '../components/Rolls/components/RollsPage/CezarRoll';
+import { VopperRoll } from '../components/Rolls/components/RollsPage/VopperRoll'
+import { FishRoll } from '../components/Rolls/components/RollsPage/FishRoll';
 
 
 export function NavigateContainer () {

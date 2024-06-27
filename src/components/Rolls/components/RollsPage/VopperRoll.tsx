@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increment } from '../../../store/slice/CouterSlice'
-import { ROLIMAGE } from '../../../Assets/RollImage/ImageRol/RolImage'
+import { increment } from '../../../../store/slice/CouterSlice'
+import { ROLIMAGE } from '../../../../Assets/RollImage/ImageRol/RolImage'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 
 const {VOPPERROL}=ROLIMAGE
 
@@ -59,15 +60,9 @@ const VopperRoll = () => {
                         <p className='angus_ditails_opis' >Ролл со вкусом Воппера! Два приготовленных на огне бифштекса, свежие овощи, много соуса — все, за что любят наш легендарный Воппер, теперь в пшеничной лепешке.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Воппер Ролл',image:VOPPERROL,price:9.30,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Воппер Ролл',image:VOPPERROL,price:9.30,quantity:1}))}} >в корзину</Button>
                 </div>
             </div>
-            
-
         </div>
     </div>
   )

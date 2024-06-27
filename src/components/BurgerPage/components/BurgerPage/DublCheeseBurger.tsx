@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {DUBLCHEESEBURGER} = CATEGORIES
 
@@ -61,11 +62,7 @@ const DublCheeseBurger = () => {
                         <p className='angus_ditails_opis' >ва приготовленных на огне фирменных говяжьих бифштекса, два ломтика слегка расплавленного сыра, хрустящий маринованный огурчик, рубленый лук, горчица и кетчуп. И все это в подрумяненной и посыпанной кунжутом булочке.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Двойной ЧизБургер',image:DUBLCHEESEBURGER,price:7.29,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Двойной ЧизБургер',image:DUBLCHEESEBURGER,price:7.29,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

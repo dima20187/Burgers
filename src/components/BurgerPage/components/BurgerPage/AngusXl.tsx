@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {ANGUS,ANGUSXL,BIGKING,
     VOPPERD,VOPPERDABL,VOPPERCHEESE,
@@ -64,11 +65,7 @@ const AngusXl = () => {
                         <p className='angus_ditails_opis' >В этом красавце целых 300 граммов невероятно нежной 100% мраморной говядины Абердин Ангус, приготовленной на живом огне. Французская булочка бриошь со свежими овощами, луком фри, беконом и сыром Гауда. Ангус Шеф XL — это pro-сочность!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Ангус Шеф XL', image:ANGUSXL, price: 21.39,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Ангус Шеф XL', image:ANGUSXL, price: 21.39,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

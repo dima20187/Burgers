@@ -4,6 +4,7 @@ import { IItems } from '@/types/Items'
 import { Link } from 'react-scroll'
 import { useDispatch } from 'react-redux'
 import { increment } from '../../../store/slice/CouterSlice'
+import { ButtonList } from '../../../ui-kit/Buttons/ButtonList'
 
 
 type IWater = {
@@ -16,13 +17,13 @@ export const ColdWaterItems:FC<IWater> = ({item}) => {
   
   return (
     <div className='water_item' key={item.id}>
-    <Link to={item.href} ><img className='water_img' src={item.image} alt='' /></Link>
+    <Link to={item.href!} ><img className='water_img' src={item.image} alt='' /></Link>
     <div className='info_items' >
       <p className='water_name' >{item.name}</p>
-      <p className='water_info' > <Link to={item.href} > {item.about}</Link></p>
+      <p className='water_info' > <Link to={item.href!} > {item.about}</Link></p>
       <div className='water_buy' >
         <p className='water_price' > {item.price} руб.</p>
-        <button onClick={()=>{dispatch(increment((item)))}} >Купить</button>
+        <ButtonList onClick={()=>{dispatch(increment((item)))}} >Купить</ButtonList>
       </div>
     </div>
     </div>

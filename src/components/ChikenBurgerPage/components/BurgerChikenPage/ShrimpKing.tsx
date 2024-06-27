@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CHIKEN } from '../../../../Assets/ChikenBurgerImage/imageChiken/Chiken'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 import '../styles/Burger.css'
 
 const {SHRIPKING}=CHIKEN
@@ -61,12 +62,7 @@ const ShrimpKing = () => {
                         <p className='angus_ditails_opis' >Особенный и очень вкусный бургер из хрустящей куриной котлеты, свежего нарезанного салата, кетчупа и майонеза!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Шримп Кинг',image:SHRIPKING,price:10.40,quantity:1}))}} >В корзину</button>
-                        
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Шримп Кинг',image:SHRIPKING,price:10.40,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

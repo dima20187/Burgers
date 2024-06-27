@@ -3,6 +3,7 @@ import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {TILZITERKING} = CATEGORIES
 
@@ -61,11 +62,7 @@ const TilzitterKing = () => {
                         <p className='angus_ditails_opis' >Сыр тает. И ты тоже! Фирменный бифштекс из 100%-й говядины под одеялом из тающего Тильзитера с щедрой порцией очень сырного соуса Пармеджано. А ещё свежие овощи: томаты, салат Айсберг и лук — для большей сочности. Всё на нашей любимой булочке с сырной кляксой!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name: 'Тильзитер Кинг', image:TILZITERKING,price:10.99,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name: 'Тильзитер Кинг', image:TILZITERKING,price:10.99,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

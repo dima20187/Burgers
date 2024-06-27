@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const { VOPPERDABL } = CATEGORIES
 
@@ -62,11 +63,7 @@ const DublVopper = () => {
                         <p className='angus_ditails_opis' >ВОППЕР® — это вкуснейшая приготовленная на огне 100% говядина с сочными помидорами, свежим нарезанным листовым салатом, густым майонезом, хрустящими маринованными огурчиками и свежим луком на нежной булочке с кунжутом.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Двойной Воппер',image:VOPPERDABL,price:12.59,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Двойной Воппер',image:VOPPERDABL,price:12.59,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

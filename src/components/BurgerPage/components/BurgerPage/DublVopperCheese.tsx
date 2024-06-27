@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {DABLPVOPPERCHEESE} = CATEGORIES
 
@@ -61,11 +62,7 @@ const DublVopperCheese = () => {
                         <p className='angus_ditails_opis' >Двойной ВОППЕР®с сыром - это два аппетитных, приготовленных на огне бифштекса из 100% говядины, два нежных ломтика сыра, сочные помидоры, свежий нарезанный листовой салат, густой майонез, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Двойной воппер с сыром',image:DABLPVOPPERCHEESE,price:13.59,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Двойной воппер с сыром',image:DABLPVOPPERCHEESE,price:13.59,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

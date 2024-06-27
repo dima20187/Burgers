@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CHIKEN } from '../../../../Assets/ChikenBurgerImage/imageChiken/Chiken'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 import '../styles/Burger.css'
 
 const {TILZITERKING}=CHIKEN
@@ -61,11 +62,7 @@ const TilziterChiken = () => {
                         <p className='angus_ditails_opis' >Сырное золото! Хрустящая курочка под сырным соусом Пармеджано и тающий Тильзитер в золотистой корочке. А ещё порция свежих овощей: томаты, салат Айсберг и рубленый лучок — на ароматной булочке с сырной кляксой!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Тильзитер Кинг с Курицей',image:TILZITERKING,price:17.40,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Тильзитер Кинг с Курицей',image:TILZITERKING,price:17.40,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

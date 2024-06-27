@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increment } from '../../../store/slice/CouterSlice'
-import { ROLIMAGE } from '../../../Assets/RollImage/ImageRol/RolImage'
+import { increment } from '../../../../store/slice/CouterSlice'
+import { ROLIMAGE } from '../../../../Assets/RollImage/ImageRol/RolImage'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 
 const {TILZITERROL}=ROLIMAGE
 
@@ -59,11 +60,7 @@ const TilziterRoll = () => {
                         <p className='angus_ditails_opis' >Завернули по-сырному: тающий Тильзитер в золотистой панировке, сочные куриные стрипсы, много сырного соуса Пармеджано, ломтик томата, салат Айсберг и лук — всё в румяной тортилье Гриль!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Тильзитер Ролл',image:TILZITERROL,price:10.40,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Тильзитер Ролл',image:TILZITERROL,price:10.40,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

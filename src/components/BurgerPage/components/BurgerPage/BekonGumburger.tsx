@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {BEKONGAMBURGER}=CATEGORIES
 const BekonGumburger = () => {
@@ -60,11 +61,7 @@ const BekonGumburger = () => {
                         <p className='angus_ditails_opis' >Гамбургер по-новому, дымному! Мы добавили бекончик и много соуса Барбекю — получилось ароматно и сочно.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Бекон Гамбургер',image:BEKONGAMBURGER,price:3.00,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Бекон Гамбургер',image:BEKONGAMBURGER,price:3.00,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

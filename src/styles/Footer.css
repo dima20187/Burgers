@@ -46,8 +46,8 @@
     margin-left: 2%;
     content: '';
     display: flex;
+    align-items: center;
     top: 0;
-    height: 60px;
     border-left: 1px solid #fff;
  
 }

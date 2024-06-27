@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {ANGUS,ANGUSXL,BIGKING,
     VOPPERD,VOPPERDABL,VOPPERCHEESE,
@@ -63,11 +64,7 @@ const AngusParmedDubl = () => {
                         <p className='angus_ditails_opis' >Много сыра, ещё больше говядины! Два сочных мраморных бифштекса Абердин Ангус, пикантный Пармезан и щедрая порция сырного соуса Пармеджано. А ещё здесь овощи: салат Романо, маринованный красный лучок и свежие томаты — всё на булочке бриошь с двумя видами кунжута.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button  onClick={()=>dispatch(increment({name: 'Ангус Пармеджано Двойной', image:ANGUSPARMERDUBL, price: 18.99, quantity:1}))}>В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name: 'Ангус Пармеджано Двойной', image:ANGUSPARMERDUBL, price: 18.99, quantity:1}))} >В корзину</Button>
                 </div>
             </div>
             

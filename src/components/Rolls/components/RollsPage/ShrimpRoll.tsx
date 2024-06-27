@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increment } from '../../../store/slice/CouterSlice'
-import { ROLIMAGE } from '../../../Assets/RollImage/ImageRol/RolImage'
+import { increment } from '../../../../store/slice/CouterSlice'
+import { ROLIMAGE } from '../../../../Assets/RollImage/ImageRol/RolImage'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 
 const {SHRIMPROL}=ROLIMAGE
 
@@ -59,11 +60,7 @@ const ShrimpRoll = () => {
                         <p className='angus_ditails_opis' >Легкий ролл с нежными королевскими креветками в хрустящей панировке, свежий салат Айсберг и ломтик сыра в пшеничной лепешке под соусом Тар-Тар. Внимание! Блюдо содержит аллергены – морепродукты.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Шримп Ролл',image:SHRIMPROL,price:10.40,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Шримп Ролл',image:SHRIMPROL,price:10.40,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

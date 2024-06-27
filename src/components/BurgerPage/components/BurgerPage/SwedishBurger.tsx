@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {SWEDISHBURGER} = CATEGORIES
 
@@ -61,11 +62,7 @@ const SwedishBurger = () => {
                         <p className='angus_ditails_opis' >Шведский бургер с клюквенным соусом достоин звания высокой кухни! Сочный говяжий бифштекс, расплавленный сыр Чеддер, маринованные огурчики, хрустящий лук и листья салата заправляются сырным соусом и пряным клюквенным соусом из натуральных ягод. Подаётся на французской булочке бриошь.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Шведский Бургер',image:SWEDISHBURGER,price:9.79,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Шведский Бургер',image:SWEDISHBURGER,price:9.79,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

@@ -1,6 +1,6 @@
 export interface IItems {
     id: string;
-    image: HTMLImageElement | string;
+    image: HTMLImageElement | any;
     name: string;
     about?: string;
     href?: string;

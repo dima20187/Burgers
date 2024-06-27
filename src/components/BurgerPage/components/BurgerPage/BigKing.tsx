@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {BIGKING}=CATEGORIES
 
@@ -61,11 +62,7 @@ const BigKing = () => {
                         <p className='angus_ditails_opis' >Этот сэндвич по праву носит свой титул. Он составлен с истинной королевской щедростью: в нем два приготовленных на огне фирменных бифштекса, ломтик сыра чеддер, огурчики, свежий нарезанный салат, лук и непревзойденный соус тартар. И все это в подрумяненной и посыпанной кунжутом булочке.</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Биг Кинг',image:BIGKING,price:7.99,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Биг Кинг',image:BIGKING,price:7.99,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             

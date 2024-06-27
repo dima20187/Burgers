@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increment } from '../../../store/slice/CouterSlice'
-import { ROLIMAGE } from '../../../Assets/RollImage/ImageRol/RolImage'
+import { increment } from '../../../../store/slice/CouterSlice'
+import { ROLIMAGE } from '../../../../Assets/RollImage/ImageRol/RolImage'
+import { Button } from '../../../../ui-kit/Buttons/Button'
 
 const {FISHROL}=ROLIMAGE
 
@@ -59,11 +60,7 @@ const FishRoll = () => {
                         <p className='angus_ditails_opis' >Такая рыбка тебе понравится! Польза омега-3 в нежном рыбном филе под соусом Тар-тар, хрустящие маринованные огурчики, салат Айсберг и лук в румяной тортилье — легко, вкусно и полезно!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>{dispatch(increment({name:'Фиш Ролл',image:FISHROL,price:9.30,quantity:1}))}} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>{dispatch(increment({name:'Фиш Ролл',image:FISHROL,price:9.30,quantity:1}))}} >В корзину</Button>
                 </div>
             </div>
             

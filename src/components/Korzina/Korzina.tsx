@@ -23,7 +23,7 @@ const Korzina = () => {
         <div className='korzina_none' >
             <h1>Корзина пуста...</h1>
             <img src={KORZINA} alt='/' />
-            </div> 
+        </div> 
         ):(
         <div className='korzinaItem' >
         {stre.map(({name,image,price,quantity,id})=>(

@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { increment } from '../../../../store/slice/CouterSlice'
 import { CATEGORIES } from '../../../../Assets/BurgerImage/image/Categories'
 import '../styles/Burger.css'
+import { Button }from '../../../../ui-kit/Buttons/Button'
 
 const {GRANDGHEESEFRESH} = CATEGORIES
 
@@ -61,11 +62,7 @@ const GrandCheeseFresh= () => {
                         <p className='angus_ditails_opis' >Особенная версия Гранд Чиза — со свежими овощами. Новый бифштекс по-домашнему (к фирменной говядине мы добавили немного сочной курочки), ломтики сыра Чеддер, хрустящий Айсберг, помидоры, лук, маринованные огурчики, кетчуп и горчица. Это точно сочно!</p>
                                         
                     </div>
-                    <div className='button_price' >
-                        
-                        <button onClick={()=>dispatch(increment({name:'Гранд Чиз Фреш',image:GRANDGHEESEFRESH,price:8.29,quantity: 1}))} >В корзину</button>
-                    </div>
-
+                    <Button onClick={()=>dispatch(increment({name:'Гранд Чиз Фреш',image:GRANDGHEESEFRESH,price:8.29,quantity: 1}))} >В корзину</Button>
                 </div>
             </div>
             
